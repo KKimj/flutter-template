@@ -2,6 +2,18 @@
 
 Flutter & Firebase project template
 
+
+## Project architecture
+MVVM
+* View
+* Model
+* View model
+
+## Recommended packages
+* [pedantic](https://pub.dev/packages/pedantic)
+* [GetX](https://pub.dev/packages/get)
+* [freezed](https://pub.dev/packages/freezed)
+
 ## [.gitignore](.gitignore)
 
 ## Getting started
