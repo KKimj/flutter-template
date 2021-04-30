@@ -9,6 +9,18 @@ MVVM
 * Model
 * View model
 
+## Getting started
+```
+$ flutter create --org {com.companyname.packagename} {project_name}
+
+# or
+
+$ flutter create --androidx -t app --org {com.companyname.packagename} -a kotlin -i swift {project_name}
+
+# example
+$ flutter create --org com.user.myapp flutter_project
+```
+
 ## Recommended packages
 * [pedantic](https://pub.dev/packages/pedantic)
 * [GetX](https://pub.dev/packages/get)
@@ -22,19 +34,6 @@ $ flutter pub add freezed
 $ echo include: package:pedantic/analysis_options.yaml > analysis_options.yaml
 ```
 
-## [.gitignore](.gitignore)
-
-## Getting started
-
-```
-$ flutter create --org {com.companyname.packagename} {project_name}
-$ flutter create --androidx -t app --org com.companyname.packagename -a kotlin -i swift {project_name}
-
-# example
-$ flutter create --org com.user.myapp flutter_project
-
-$ git clone https://github.com/KKimj/flutter-template.git
-```
 
 
 ## Tips
