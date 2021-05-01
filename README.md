@@ -25,11 +25,13 @@ $ flutter create --org com.user.myapp flutter_project
 * [pedantic](https://pub.dev/packages/pedantic)
 * [GetX](https://pub.dev/packages/get)
 * [freezed](https://pub.dev/packages/freezed)
+* [universal_platform](https://pub.dev/packages/universal_platform)
 
 ```
 $ flutter pub add pedantic
 $ flutter pub add get
 $ flutter pub add freezed
+$ flutter pub add universal_platform
 
 $ echo include: package:pedantic/analysis_options.yaml > analysis_options.yaml
 ```
