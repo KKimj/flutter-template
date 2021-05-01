@@ -26,12 +26,14 @@ $ flutter create --org com.user.myapp flutter_project
 * [GetX](https://pub.dev/packages/get)
 * [freezed](https://pub.dev/packages/freezed)
 * [universal_platform](https://pub.dev/packages/universal_platform)
+* [sized_context](https://pub.dev/packages/sized_context)
 
 ```
 $ flutter pub add pedantic
 $ flutter pub add get
 $ flutter pub add freezed
 $ flutter pub add universal_platform
+$ flutter pub add sized_context
 
 $ echo include: package:pedantic/analysis_options.yaml > analysis_options.yaml
 ```
