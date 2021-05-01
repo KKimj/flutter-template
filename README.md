@@ -5,8 +5,8 @@ Flutter & Firebase project template
 
 ## Project architecture
 MVVM
-* View
 * Model
+* View
 * View model
 
 ## Getting started
