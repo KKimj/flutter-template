@@ -1,6 +1,6 @@
 # flutter-template
 
-Flutter & Firebase project template
+Flutter & Firebase __Responsive UI__ project template
 
 
 ## Project architecture
@@ -25,15 +25,15 @@ $ flutter create --org com.user.myapp flutter_project
 * [pedantic](https://pub.dev/packages/pedantic)
 * [GetX](https://pub.dev/packages/get)
 * [freezed](https://pub.dev/packages/freezed)
-* [universal_platform](https://pub.dev/packages/universal_platform)
-* [sized_context](https://pub.dev/packages/sized_context)
+
+* [responsive_builder](https://pub.dev/packages/responsive_builder)
 
 ```
 $ flutter pub add pedantic
 $ flutter pub add get
 $ flutter pub add freezed
-$ flutter pub add universal_platform
-$ flutter pub add sized_context
+
+$ flutter pub add responsive_builder
 
 $ echo include: package:pedantic/analysis_options.yaml > analysis_options.yaml
 ```
@@ -48,6 +48,8 @@ $ echo include: package:pedantic/analysis_options.yaml > analysis_options.yaml
 $ flutter pub run build_runner build
 
 $ flutter run -d chrome
+# or
+$ flutter run -d web-server --web-port 8080
 ```
 
 ### Test .dart /test
