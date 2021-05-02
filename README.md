@@ -44,6 +44,9 @@ $ echo include: package:pedantic/analysis_options.yaml > analysis_options.yaml
 
 ### Build flutter project, chrome 
 ```
+# Build for freezed
+$ flutter pub run build_runner build
+
 $ flutter run -d chrome
 ```
 
