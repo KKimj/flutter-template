@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template_project/_util/device_info.dart';
 import 'package:flutter_template_project/models/test_model.dart';
+import 'package:flutter_template_project/viewmodels/user_viewmodel.dart';
 import 'package:get/get.dart';
 
 import 'package:responsive_builder/responsive_builder.dart';
+
+import 'package:flutter_template_project/viewmodels/test_viewmodel.dart';
 
 class MainPage extends StatelessWidget {
   @override
@@ -14,8 +17,6 @@ class MainPage extends StatelessWidget {
 
     num width2 = Get.width;
 
-    var test1 = Test(id: 1, value: 3);
-
     return Scaffold(
       appBar: AppBar(),
       body: SafeArea(child: ResponsiveBuilder(
@@ -24,17 +25,21 @@ class MainPage extends StatelessWidget {
             child: Column(
               children: [
                 Text('Hello template'),
-                Text('is web : $status'),
-                Text('is LargePhone : $isLargePhone'),
-                Text('width : $width'),
-                Text('width : $width2'),
-                Text('test id : $test1'),
                 ElevatedButton(
                   onPressed: () {
                     Get.toNamed('/sub');
                   },
                   child: Text('Go to subpage!'),
-                )
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    var id = TestViewmodel.to.test.id + 1;
+                    var value = TestViewmodel.to.test.value + 1;
+                    TestViewmodel.to.test_update(id: id, value: value);
+                  },
+                  child: Text('update !'
+                      '${TestViewmodel.to.test.id} / ${TestViewmodel.to.test.value}'),
+                ),
               ],
             ),
           );
