@@ -17,12 +17,12 @@ class SubPage extends StatelessWidget {
               child: GetBuilder<TestViewmodel>(builder: (_) {
                 return ElevatedButton(
                   onPressed: () {
-                    var id = TestViewmodel.to.test.value.id + 1;
-                    var value = TestViewmodel.to.test.value.value + 1;
+                    var id = TestViewmodel.to.test.id + 1;
+                    var value = TestViewmodel.to.test.value + 1;
                     TestViewmodel.to.test_update(id: id, value: value);
                   },
                   child: Text('update !'
-                      '${TestViewmodel.to.test.value.id} / ${TestViewmodel.to.test.value.value}'),
+                      '${TestViewmodel.to.test.id} / ${TestViewmodel.to.test.value}'),
                 );
               }),
             ),
