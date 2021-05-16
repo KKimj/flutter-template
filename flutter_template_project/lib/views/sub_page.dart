@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
+import 'package:flutter_template_project/viewmodels/app_viewmodel.dart';
 import 'package:flutter_template_project/viewmodels/test_viewmodel.dart';
 
 class SubPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    AppViewmodel.to.title_update(title: 'Flutter template : Sub Page');
     return Scaffold(
       appBar: AppBar(),
       body: SafeArea(
