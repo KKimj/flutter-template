@@ -4,11 +4,11 @@ import 'package:flutter/services.dart';
 import 'package:flutter_template_project/core_packages.dart';
 import 'package:flutter_template_project/models/app_model.dart';
 
-class AppViewmodel extends GetxController {
-  var appModel = AppModel(title: 'flutter template');
+class AppController extends GetxController {
+  var appModel = App(title: 'flutter template');
 
   void title_update({required String title}) {
-    appModel = AppModel(title: title);
+    appModel = App(title: title);
 
     SystemChrome.setApplicationSwitcherDescription(
         ApplicationSwitcherDescription(
@@ -18,7 +18,7 @@ class AppViewmodel extends GetxController {
     update();
   }
 
-  static AppViewmodel get to => Get.find();
+  static AppController get to => Get.find();
 
   String get title => appModel.title;
 }

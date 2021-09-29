@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template_project/main_scaffold.dart';
+import 'package:flutter_template_project/main_app.dart';
 
 void main() {
-  runApp(MainScaffold());
+  runApp(MainApp());
 }

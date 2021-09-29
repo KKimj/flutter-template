@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
+
+// packages
 import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-import 'package:flutter_template_project/viewmodels/app_viewmodel.dart';
-import 'package:flutter_template_project/viewmodels/test_viewmodel.dart';
+// controllers
+import 'package:flutter_template_project/controllers/app_controller.dart';
+import 'package:flutter_template_project/controllers/test_controller.dart';
 
 class SubPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    AppViewmodel.to.title_update(title: 'Flutter template : Sub Page');
+    AppController.to.title_update(title: 'Flutter template : Sub Page');
     return Scaffold(
       appBar: AppBar(),
       body: SafeArea(
@@ -16,15 +19,15 @@ class SubPage extends StatelessWidget {
           children: [
             SizedBox(
               height: 100,
-              child: GetBuilder<TestViewmodel>(builder: (_) {
+              child: GetBuilder<TestController>(builder: (_) {
                 return ElevatedButton(
                   onPressed: () {
-                    var id = TestViewmodel.to.test.id + 1;
-                    var value = TestViewmodel.to.test.value + 1;
-                    TestViewmodel.to.test_update(id: id, value: value);
+                    var id = TestController.to.test.id + 1;
+                    var value = TestController.to.test.value + 1;
+                    TestController.to.test_update(id: id, value: value);
                   },
                   child: Text('update !'
-                      '${TestViewmodel.to.test.id} / ${TestViewmodel.to.test.value}'),
+                      '${TestController.to.test.id} / ${TestController.to.test.value}'),
                 );
               }),
             ),

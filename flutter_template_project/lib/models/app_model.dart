@@ -1,5 +1,5 @@
-class AppModel {
+class App {
   late String title;
 
-  AppModel({required this.title});
+  App({required this.title});
 }
